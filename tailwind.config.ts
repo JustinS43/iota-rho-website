@@ -13,7 +13,7 @@ const config: Config = {
           blue: "#003A8F", // royal blue
           white: "#FFFFFF",
           ink: "#0B1220",  // dark text
-          slate: "#64748B" // muted text
+          slate: "#003A8F" // muted text
         },
       },
     },

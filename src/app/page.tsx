@@ -41,8 +41,8 @@ export default function Home() {
         </h2>
 
         <p className="mt-4 max-w-3xl text-sigma-slate">
-          The Iota Rho Chapter of Phi Beta Sigma Fraternity, Inc. is committed to brotherhood, service,
-          and leadership development. Our chapter strives to uplift the UCF community while fostering
+          The Iota Rho Chapter of Phi Beta Sigma Fraternity, Inc. is committed to brotherhood, scholarship,
+          and Service. Our chapter strives to uplift the UCF community while fostering
           lifelong bonds among our members.
         </p>
       </section>
@@ -66,19 +66,19 @@ export default function Home() {
 
             <div className="rounded-2xl border p-6">
               <h3 className="text-lg font-semibold text-sigma-ink">
-                Service
+                Scholarship
               </h3>
               <p className="mt-2 text-sm text-sigma-slate">
-                Giving back through impactful community service.
+                Pursuing academic excellence and personal growth.
               </p>
             </div>
 
             <div className="rounded-2xl border p-6">
               <h3 className="text-lg font-semibold text-sigma-ink">
-                Leadership
+                Service
               </h3>
               <p className="mt-2 text-sm text-sigma-slate">
-                Developing leaders who serve with integrity and purpose.
+                Giving back through impactful community service.
               </p>
             </div>
           </div>
