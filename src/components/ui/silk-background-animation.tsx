@@ -190,48 +190,40 @@ export const Component = ({
 
             <p
               className={[
-                "opacity-0 mt-6 text-xs sm:text-sm md:text-base font-light",
-                "tracking-[0.28em] uppercase text-white/70",
+                "opacity-0 mt-8 text-xs sm:text-sm md:text-base font-light",
+                "tracking-[0.28em] uppercase text-white/80",
                 isLoaded ? "animate-fade-in-up-delay" : "",
               ].join(" ")}
+              style={{ textShadow: "0 0 18px rgba(255, 255, 255, 0.25)" }}
+
             >
               {subtitle}
             </p>
 
-            {/* CTAs */}
-            <div
-              className={[
-                "opacity-0 mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row",
-                isLoaded ? "animate-fade-in-up-delay" : "",
-              ].join(" ")}
-            >
-              <a
-                href={primaryCta.href}
-                className="rounded-lg bg-white px-6 py-3 text-sm font-semibold text-black hover:bg-white/90"
-              >
-                {primaryCta.label}
-              </a>
 
-              <a
-                href={secondaryCta.href}
-                className="rounded-lg border border-white/40 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10"
+           {/* CTAs */}
+              <div
+                className={[
+                  "opacity-0 mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap",
+                  isLoaded ? "animate-fade-in-up-delay" : "",
+                ].join(" ")}
               >
-                {secondaryCta.label}
-              </a>
-            </div>
+                ...
+              </div>
+
+
+          {/* Corner Accent */}
+          <div
+            className={[
+              "absolute left-6 top-6 z-30 opacity-0",
+              "text-xs font-light tracking-widest uppercase text-white/45",
+              isLoaded ? "animate-fade-in-corner" : "",
+            ].join(" ")}
+          >
+            {cornerText}
           </div>
         </div>
-
-        {/* Corner Accent */}
-        <div
-          className={[
-            "absolute left-6 top-6 z-30 opacity-0",
-            "text-xs font-light tracking-widest uppercase text-white/45",
-            isLoaded ? "animate-fade-in-corner" : "",
-          ].join(" ")}
-        >
-          {cornerText}
-        </div>
+      </div>
       </div>
     </>
   );
