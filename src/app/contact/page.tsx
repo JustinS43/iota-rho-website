@@ -1,47 +1,47 @@
+import PageShell from "@/components/PageShell";
+import ThemedCard from "@/components/ThemedCard";
+
 export default function ContactPage() {
-    return (
-        <section className="mx-auto max-w-6xl px-4 py-16">
-            <h1 className="text-3xl font-bold text-sigma-ink md:text-4xl">
-                Contact / Interest
-        </h1>
-
-        <p className="mt-4 max-w-3xl text-sigma-slate">
-            Reach out to the Iota Rho Chapter. This form will be connected to the backend later.
-        </p>
-
-        <form className="mt-10 max-w-xl space-y-4 rounded-2xl border p-6 shadow-sm">
-            <div>
-                <label className="text-sm font-medium text-sigma-ink">Name</label>
+  return (
+    <PageShell
+      title="Contact / Interest"
+      subtitle="Reach out to the Iota Rho Chapter. Form submission will be connected later."
+    >
+      <ThemedCard>
+        <form className="max-w-xl space-y-4">
+          <div>
+            <label className="text-sm font-medium text-white/90">Name</label>
             <input
-                className="mt-1 w-full rounded-lg border px-3 py-2"
-                placeholder="Your name"
+              className="mt-1 w-full rounded-lg border border-white/10 bg-black/20 px-3 py-2 text-white placeholder:text-white/40 outline-none focus:ring-2 focus:ring-white/20"
+              placeholder="Your name"
             />
-        </div>
+          </div>
 
-        <div>
-            <label className="text-sm font-medium text-sigma-ink">Email</label>
+          <div>
+            <label className="text-sm font-medium text-white/90">Email</label>
             <input
-                className="mt-1 w-full rounded-lg border px-3 py-2"
-                placeholder="you@example.com"
+              className="mt-1 w-full rounded-lg border border-white/10 bg-black/20 px-3 py-2 text-white placeholder:text-white/40 outline-none focus:ring-2 focus:ring-white/20"
+              placeholder="you@example.com"
             />
-        </div>
+          </div>
 
-        <div>
-            <label className="text-sm font-medium text-sigma-ink">Message</label>
+          <div>
+            <label className="text-sm font-medium text-white/90">Message</label>
             <textarea
-                className="mt-1 w-full rounded-lg border px-3 py-2"
-                rows={5}
-                placeholder="How can we help?"
+              className="mt-1 w-full rounded-lg border border-white/10 bg-black/20 px-3 py-2 text-white placeholder:text-white/40 outline-none focus:ring-2 focus:ring-white/20"
+              rows={5}
+              placeholder="How can we help?"
             />
-        </div>
+          </div>
 
-        <button
+          <button
             type="button"
-            className="rounded-lg bg-sigma-blue px-5 py-2.5 text-sm font-semibold text-white hover:opacity-95"
-        >
+            className="rounded-lg bg-sigma-blue px-5 py-2.5 text-sm font-semibold text-white hover:bg-sigma-blue/90"
+          >
             Send (coming soon)
-        </button>
+          </button>
         </form>
-    </section>
+      </ThemedCard>
+    </PageShell>
   );
 }
