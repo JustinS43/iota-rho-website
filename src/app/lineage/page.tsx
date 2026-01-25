@@ -27,9 +27,9 @@ const lines: LineageLine[] = [
     members: ["Member One", "Member Two", "Member Three"],
     },
     {
-    id: "line-2023-fall",
-    title: "Fall 2023 — (Line Name Here)",
-    subtitle: "Crossed: Fall 2023",
+    id: "line-2023-spring",
+    title: "Spring 2023 — (Line Name Here)",
+    subtitle: "Crossed: Spring 2023",
     photoAlt: "Line photo",
     members: ["Member One", "Member Two"],
     },
